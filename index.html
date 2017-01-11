@@ -2,61 +2,87 @@
 <html> 
     <head>
     	 <title>Clothing store</title>
+    	 <link rel="stylesheet" type="text/css" href="reset.css">
+    	 <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+</head>
     </head>
     <body>
-		<main>
+		
 			<header>
-				<img src="images/aloha-logo.svg" alt="logo">
-				<img src="images/cart-icon.svg" alt="cart-icon">
+				<img class="logo" src="images/aloha-logo.svg" alt="logo">
+				<img class="cart" src="images/cart-icon.svg" alt="cart-icon">
 			 </header>
 
-			<section>
-				<img src="images/banner-girl.png" alt="banner-girl">
+			 <main>
+
+			<section id="banner">
+				<div id="banner-girl">
+				</div>
+				<div id="banner-text">
 				<h5>NEW COLECTION</h5>
 				<h1>Spring/Summer 2016 </h1>
+				</div>
 			</section>
 
-			<section> 
+			<section class="cta"> 
+				<div class="cta-text">
 				<h2><em>Hand-Crafted </em><strong>Styles</strong></h2>
-				<p>Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our current selection of products or sign-up for updates below.</p>
+				<p>Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our<br> current selection of products or sign-up for updates below.</p>
+				</div><!--end of cta text-->
 			</section>
 
-			<section> 
+			<section class="products"> 
 				<h2><em>Most-Loved </em><strong>Products</strong></h2>
+				<div class="product-rol">
 
-				<div class = "item">
+				<div class = "item-width-25">
 				<img src="images/stretch-knit-dress.jpg" alt="Dress">
 				<p>DRESSES</p>
 				<h3>Strech Knit Dress</h3>
 				<p> &#36;169.00</p> 
 				</div>
 
-				<div class = "item">
+				<div class = "item-width-25">
 				<img src="images/cotton-blue-shirt.jpg" alt="Shirt">
 				<p>SHIRTS</p>
 				<h3>Cotton Blue Shirt</h3>
 				<p> &#36;89.00</p> 
 				</div>
 
-				<div class = "item">
+				<div class = "item-width-25">
 				<img src="images/checked-stretch-dress.jpg" alt="Dress">
 				<p>DRESSES</p>
 				<h3>Checked Stretch Dress</h3>
 				<p> &#36;129.00</p> 
 				</div>
 
-				<div class = "item">
+				<div class = "item-width-25">
 				<img src="images/blue-hipster-backpack.jpg" alt="Backpack">
 				<p>BAGS</p>
 				<h3>Blue Hipster Backpack</h3>
 				<p> &#36;69.00</p> 
 				</div>
+				</div><!--end of product rol-->
+
+				<div>
+    			<div style="float: left;"></div>
+   				<div style="clear: both;"></div> <!-- Clear the float -->
+</div>
+
 			</section>
 
-			<section> 
+			<section class="subscribe"> 
+				<div class="subscribe-text">
 				<h2><em>Sign-up for </em><strong>Updates</strong></h2>
-				<p>Stay updated on our latest product releases, be first to find about upcoming sales, and get free tips from our blog. Unscrible at any time.</p>
+				<p>Stay updated on our latest product releases, be first to find about upcoming<br> sales, and get free tips from our blog. Unscrible at any time.</p>
+				</div><!--end of div subscribe-text-->
+				<form class="form">
+				<input type="email" value="Your email">
+				<button type="button">Subscribe</button>
+				</form>
 			</section>
+			</main>
 
 			<footer> 
 				<p>&copy;<strong>Aloha Apparel Co.</strong></p>

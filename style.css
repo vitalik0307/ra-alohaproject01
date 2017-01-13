@@ -23,10 +23,15 @@ h4 {font-size: 1.25rem;
 }
 h5 {font-size: 1rem;
 }
+a{text-decoration: none;
+	color: white;
+}
 
 .text-center{
 	text-align: center;
 }
+
+
 .italic{
 	font-style: italic;
 }
@@ -37,18 +42,37 @@ h5 {font-size: 1rem;
 .text-shadow{
 	text-shadow: 2px 2px 4px gray;
 }
+.grey {
+	color: grey;
+}
+.white{
+	color: white;
+}
+/* --- General Pos. --- */
+
+.floatleft{
+	float:left;
+}
+.floatright{
+	float: right;
+}
+.clearfix:after {
+	clear: both;
+	content:" ";
+	display: block;
+}
 
 .logo{
-	float: left;
 	width:12%;
 	margin:2vh 3vh;
 }
 .cart{
-	float: right;
 	width:5%;
 	margin:2vh;
 }
 
+
+/* -- BANNER RULES -- */
 #banner{
 	clear: both;
 	background-image:url("images/flower-bkgd.jpg");
@@ -77,62 +101,39 @@ h5 {font-size: 1rem;
 	z-index: 2;
 	position: absolute;
 	top:50%;
-	color: white;
 }
 
 #banner-text h5{
 	font-family: "raleway",sans-serif;
-	text-shadow: 2px 2px 4px gray;
 }
 
-
- .cta {
-	margin-top:8vh; 
-	margin-bottom: 8vh;
+.cta {
+	margin:8vh 0 8vh 0; 
 	line-height: 3rem;
 }
 	
 .products{
 	border-top: 1px solid gray;
-	clear: both;
 	margin-bottom:6vh;
 }
 
 .products h2{ 	
-margin-top:8vh;
-margin-bottom:7vh;
-
-
+margin:8vh 0 7vh 0;
 }
 
 .item-width-25{
 	width: 25%;
-	float: left;
 }
-.item-width-25 img{
-	height: 35vh;
-}
-
-.item-width-25 p{
-color:gray;
-}
-
 .item-width-25 h3{
 	color:#cc3b3b;
 	line-height:4rem;
 }
 
-.products:after{
-	clear: both;
-	content:" ";
-	display: block;
-}
-
 .subscribe{
-	height:40vh;
 	background-image: url("images/wave-bkgd.jpg");
 	background-repeat: no-repeat;
 	background-position:bottom;
+	padding-bottom: 14vh;
 }
 
 .subscribe-text{
@@ -140,28 +141,24 @@ color:gray;
 }
 
 .subscribe-text h2{
-	color: white;
 	line-height: 3rem;
 }
 
 .subscribe-text p{
-	color:white;
 	line-height: 2rem;
 	padding-bottom: 4vh;
 }
 
-
 .form{
 	width: 25%;
 	margin: 0 auto;
-	background-color: white;
 	border-radius: 25px;
 	padding: 4px;
+	background-color: white;
 	}
 
 	input[type="text"]{
 		width: 70%;
-		float: left;
 		padding: 4px 10px;
 		border:none;
 		background: none;
@@ -169,79 +166,124 @@ color:gray;
 		font-size:0.9rem;
 		line-height: 1.5rem;
 		font-weight: 300;
-		
-
 	}
 
 	input[type="submit"]{
 		width: 30%;
-		float: right;
 		padding: 4px 10px;
 		border-radius: 25px;
 		border:none;
 		background-color:#e05555;
-		max-height: 15vh;
-		color: white;
 		font-size:0.9rem;
 		line-height: 1.5rem;
-		
 	}
 
-.form:after{
-	clear: both;
-	content:" ";
-	display: block;
-}
-	
-
-   
-
-
 footer{
-	background-color:black;
-	color:white;
+	border-top:5px solid white;
+	background-color:#1f2021;
 }
+
 .social{
-	float: right;
-	color: white;
 	padding: 60px;
-	line-height: 1.7rem;
+	line-height: 1.9rem;
+	font-family: "raleway",sans-serif;
+}
 
-}
-.social a{
-	text-decoration: none;
-	color: white;
-
-}
-.social a:hover{
-	color: gray;
-}
 .info{
-	float: left;
 	padding: 60px 20px;
 	font-size: 1rem;
 }
-
-.info a{
-	color: white;
+.info p{
+	font-family: "Playfair display",serif;
 }
-.info a:hover{
-	color: gray;
+.padding-bottom-med{
+	padding: 2rem 0;
 }
-
-.info p:nth-child(3){
-	line-height: 4rem;
-}
-.info p:nth-child(n+4){
-	color:gray;
-}
-	
 
 
-footer:after{
+/*RESPONSIVE RULES*/
+@media only screen and (max-width: 600px) {
+
+h1 {
+	font-size: 2rem;
+}
+h2{
+	font-size: 2.2rem;
+}
+p{
+	font-size: 1rem;
+	padding: 0 1rem;
+}
+.logo{
+	width:28%;
+	margin:2vh 3vh;
+}
+.cart{
+	width:11%;
+	margin:2vh;
+}
+#banner{
+	background-position: center;
+	min-height: 60vh;
+}
+ #banner-girl{
+ 	width: 40%;
+ 	margin-left: -20%;
+}
+.cta {
+	margin:8vh 0 8vh 0; 
+	line-height: 2.2rem;
+}
+
+.item-width-25{
 	clear: both;
-	content:" ";
-	display: block;
+	width: 100%;
+	padding:3vh;
 }
+.item-width-25 p{
+	font-size: 0.7rem;
+}
+.form{
+	width: 80%;
+	}
+.info{
+	width: 100%;
+	text-align: center;
+	margin: 0 auto;
+}
+.social{
+	display: none;
+}
+}
+
+@media only screen and (max-width: 1050px) and (min-width: 600px) {
+
+	.logo{
+	width:20%;
+	margin:2vh 3vh;
+}
+.cart{
+	width:7%;
+	margin:2vh;
+}
+	#banner-girl{
+ 	width: 30%;
+ 	margin-left: -15%;
+ }
+ .item-width-25{
+	width: 50%;
+	padding:3vh;
+}
+.form{
+	width: 45%;
+	}
+}
+ 
+
+
+
+
+
+
 
 

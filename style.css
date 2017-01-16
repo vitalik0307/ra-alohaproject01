@@ -1,4 +1,4 @@
-
+	
 *, *:before, *:after {
   box-sizing: border-box;
 } 
@@ -26,6 +26,9 @@ h5 {font-size: 1rem;
 a{text-decoration: none;
 	color: white;
 }
+a:hover{
+	color: gray;
+}
 
 .text-center{
 	text-align: center;
@@ -47,6 +50,12 @@ a{text-decoration: none;
 }
 .white{
 	color: white;
+}
+.red{
+	color: red;
+}
+.underline{
+	text-decoration: underline;
 }
 /* --- General Pos. --- */
 
@@ -75,7 +84,7 @@ a{text-decoration: none;
 /* -- BANNER RULES -- */
 #banner{
 	clear: both;
-	background-image:url("images/flower-bkgd.jpg");
+	background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("images/flower-bkgd.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	min-height: 70vh;
@@ -93,7 +102,7 @@ a{text-decoration: none;
  	margin-left: -10%;
  	background-image: url("images/banner-girl.png");
  	z-index:1;
- 	height: 90%;
+ 	min-height: 90%;
 }
 
 #banner-text{
@@ -177,10 +186,14 @@ margin:8vh 0 7vh 0;
 		font-size:0.9rem;
 		line-height: 1.5rem;
 	}
+	.button:hover{
+		background-color: #7c1216;
+		box-shadow: 4px 4px 4px rgba(0,0,0,0.7);
+	}
 
 footer{
 	border-top:5px solid white;
-	background-color:#1f2021;
+	background-color:#232426;
 }
 
 .social{
@@ -236,7 +249,7 @@ p{
 }
 
 .item-width-25{
-	clear: both;
+	float: none;
 	width: 100%;
 	padding:3vh;
 }
@@ -250,15 +263,36 @@ p{
 	width: 100%;
 	text-align: center;
 	margin: 0 auto;
+	padding-bottom: 15px;
+}
+.hide-for-mobile{
+	display: none;
 }
 .social{
-	display: none;
+	float: none;
+	text-align: center;
+}
+
+.social ul{
+	text-align: center;
+	display: inline-block;
+}
+
+.social li{
+	padding: 10px;
+	float: left;
+}
+.padding-bottom-med{
+	padding: 1.5rem 0;
+}
+footer{
+	border-top: 10px solid white;
 }
 }
 
 @media only screen and (max-width: 1050px) and (min-width: 600px) {
 
-	.logo{
+.logo{
 	width:20%;
 	margin:2vh 3vh;
 }
@@ -266,7 +300,8 @@ p{
 	width:7%;
 	margin:2vh;
 }
-	#banner-girl{
+
+#banner-girl{
  	width: 30%;
  	margin-left: -15%;
  }
@@ -277,8 +312,8 @@ p{
 .form{
 	width: 45%;
 	}
+
 }
- 
 
 
 

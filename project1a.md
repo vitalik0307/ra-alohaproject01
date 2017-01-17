@@ -1,0 +1,1 @@
+This is first week project. It uses HTML5, CSS3 and media queries.

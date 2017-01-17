@@ -186,10 +186,10 @@ margin:8vh 0 7vh 0;
 		font-size:0.9rem;
 		line-height: 1.5rem;
 	}
-	.button:hover{
+	/*.button:hover{
 		background-color: #7c1216;
 		box-shadow: 4px 4px 4px rgba(0,0,0,0.7);
-	}
+	}*/
 
 footer{
 	border-top:5px solid white;

@@ -169,12 +169,10 @@ margin:8vh 0 7vh 0;
 
 	input[type="text"]{
 		width: 70%;
-		padding: 4px 10px;
+		padding: 9px 10px;
 		border:none;
 		background: none;
-		max-height: 15vh;
 		font-size:0.9rem;
-		line-height: 1.5rem;
 		font-weight: 300;
 	}
 

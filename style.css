@@ -232,6 +232,7 @@ input[type="button"]{
 	border:none;
 	border-radius: 25px;
 	margin-top:2vh;
+	-webkit-appearance: none;
 }
 
 .subscribe{

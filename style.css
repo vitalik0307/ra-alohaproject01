@@ -28,6 +28,7 @@ h5 {font-size: 1rem;
 }
 a{text-decoration: none;
 	color: white;
+	
 }
 a:hover{
 	color:#d2d7dd;
@@ -97,6 +98,20 @@ a:hover{
 	order:2;
 	width:10%;
 	margin:2vh 3vh;
+	position:relative;
+}
+.counter{
+	top:0;
+	left:4.5vh;
+	border: none;
+	position:absolute;
+	width: 2.5vh;
+	height: 2.5vh;
+	background-color:#e05555;
+	color: white;
+	border-radius: 50%;
+	text-align: center;
+	visibility:hidden; 
 }
 .cart img{
 	width: 100%;
@@ -114,6 +129,9 @@ a:hover{
 	display: flex;
 	justify-content: space-around;
 	font-weight: 800;
+}
+.nav a{
+	color:#e05555; 
 }
 
 .nav-item{

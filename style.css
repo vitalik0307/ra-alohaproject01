@@ -450,6 +450,9 @@ footer{
 	width:50%;
 	height: 27vh;
 }
+input[type="button"]{
+	width: 15vh;
+}
 .form{
 	width: 45%;
 }

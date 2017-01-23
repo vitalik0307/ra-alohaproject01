@@ -8,62 +8,125 @@
     	 <link rel="stylesheet" type="text/css" href="reset.css">
     	 <link rel="stylesheet" type="text/css" href="style.css">
     	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    	 <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+		 <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
     	 <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     </head>
     <body>
 		
 			<header>
-				<img class="logo floatleft" src="images/aloha-logo.svg" alt="logo">
-				<img class="cart floatright" src="images/cart-icon.svg" alt="cart-icon">
+			<div class="header">
+				<div class="logo" > <img src="images/aloha-logo.svg" alt="logo"></div>
+				<div class="cart"> <img src="images/cart-icon.svg" alt="cart"></div>
+				<div class="nav">
+					<ul>
+						<li class="nav-item">ABOUT</li>
+						<li class="nav-item">  SHOP  </li>
+						<li class="nav-item">FEATURED</li>
+						<li class="nav-item">UPDATES</li>
+					</ul>
+				</div>	
 			 </header>
 
 			<main>
 
-				<section id="banner">
-					<div id="banner-girl">
-					</div>
-					<div id="banner-text" class="white text-center text-shadow">
-					<h5>NEW COLECTION</h5>
-					<h1 class="font-lrg bold text-shadow">Spring/Summer 2016 </h1>
-					</div>
+				<section>
+					<div id="banner-flower">
+						
+						<div id="banner-text" class="white text-center text-shadow">
+						<h5>NEW COLECTION</h5>
+						<h1 class="font-lrg text-shadow">Spring/Summer 2016 </h1> 
+						</div>
+					</div>		
 				</section>
 
 				<section class="cta text-center"> 
 					<h2><span class="italic">Hand-Crafted </span> <span class="bold">Styles</span></h2>
 					<p>Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our</p><p> current selection of products or sign-up for updates below.</p>
 				</section>
+				<section>
+					<div class="galary">
+						<div class="mens big-img"><a href="">MEN'S</a></div>
+						<div class="trends small-img"><a href="">TRENDS</a></div>
+						<div class="glasses small-img"><a href="">GLASSES</a></div>
+						<div class="sale small-img"><a href="">SALE</a></div>
+						<div class="bags small-img"><a href="">BAGS</a></div>
+						<div class="womens big-img"><a href="">WOMEN'S</a></div>
+					</div>	
+
+
+				</section>
 
 				<section class="products text-center clearfix"> 
 					<h2><span class="italic">Most-Loved </span> <span class="bold">Products</span></h2>
+						<div class="owl-carousel owl-theme">
 
-						<div class = "item-width-25 grey floatleft">
-							<img src="images/stretch-knit-dress.jpg" alt="Dress">
-							<p>DRESSES</p>
-							<h3>Strech Knit Dress</h3>
-							<p> &#36;169.00</p> 
-						</div>
+							<div class = " product-item grey">
+								<img src="images/stretch-knit-dress.jpg" alt="Dress">
+								<p>DRESSES</p>
+								<h2>Strech Knit Dress</h2>
+								<p> &#36;169.00</p> 
+								<button class="add"><input class="btn-hover" type="button" value="Add to cart"></button>
+							</div>
 
-						<div class = "item-width-25 grey floatleft">
-							<img src="images/cotton-blue-shirt.jpg" alt="Shirt">
-							<p>SHIRTS</p>
-							<h3>Cotton Blue Shirt</h3>
-							<p> &#36;89.00</p> 
-						</div>
+							<div class = " product-item grey">
+								<img src="images/cotton-blue-shirt.jpg" alt="Shirt">
+								<p>SHIRTS</p>
+								<h2>Cotton Blue Shirt</h2>
+								<p> &#36;89.00</p>
+								<button class="add"><input class="btn-hover" type="button" value="Add to cart"></button>
+							</div>
 
-						<div class = "item-width-25 grey floatleft">
-							<img src="images/checked-stretch-dress.jpg" alt="Dress">
-							<p>DRESSES</p>
-							<h3>Checked Stretch Dress</h3>
-							<p> &#36;129.00</p> 
-						</div>
+							<div class = " product-item grey">
+								<img src="images/checked-stretch-dress.jpg" alt="Dress">
+								<p>DRESSES</p>
+								<h2>Checked Stretch Dress</h2>
+								<p> &#36;129.00</p>
+								<button class="add"><input class="btn-hover" type="button" value="Add to cart"></button> 
+							</div>
 
-						<div class = "item-width-25 grey floatleft">
-							<img src="images/blue-hipster-backpack.jpg" alt="Backpack">
-							<p>BAGS</p>
-							<h3>Blue Hipster Backpack</h3>
-							<p> &#36;69.00</p> 
-						</div>
+							<div class = "product-item grey">
+								<img src="images/blue-hipster-backpack.jpg" alt="Backpack">
+								<p>BAGS</p>
+								<h2>Blue Hipster Backpack</h2>
+								<p> &#36;69.00</p>
+								<button class="add"><input class="btn-hover" type="button" value="Add to cart"></button> 
+							</div>
+
+							<div class = "product-item grey">
+								<img src="images/demin-overall-shorts.jpg" alt="Shorts">
+								<p>DEMIN</p>
+								<h2>Demin Overall Shorts</h2>
+								<p> &#36;89.00</p>
+								<button class="add"><input class="btn-hover" type="button" value="Add to cart"></button> 
+							</div>
+
+							<div class = " product-item grey">
+								<img src="images/pink-dotted-dress.jpg" alt="Dress">
+								<p>DRESS</p>
+								<h2>Pink Dotted Dress</h2>
+								<p> &#36;99.00</p>
+								<button class="add"><input class="btn-hover" type="button" value="Add to cart"></button> 
+							</div>
+
+							<div class = " product-item grey">
+								<img src="images/cotton-yellow-tshirt.jpg" alt="Tshirt">
+								<p>TSHIRT</p>
+								<h2>Cotton Yellow Tshirt</h2>
+								<p> &#36;49.00</p>
+								<button class="add"><input class="btn-hover" type="button" value="Add to cart"></button> 
+							</div>
+
+							<div class = "product-item grey">
+								<img src="images/blue-silk-dress.jpg" alt="Dress">
+								<p>DRESS</p>
+								<h2>Blue SILK DRESS</h2>
+								<p> &#36;99.00</p>
+								<button class="add"><input class="btn-hover" type="button" value="Add to cart"></button> 
+							</div>
+						</div><!-- end of OWL CAROUSEL -->	
+
 				</section>
 
 				<section class="subscribe"> 
@@ -73,24 +136,24 @@
 					</div><!--end of div subscribe-text-->
 
 					<div class="form clearfix">
-						<input class="floatleft white "  type="text" placeholder="Your email">
+						<input class="floatleft"  type="email" placeholder="Your email">
 							<div class="button">
-							<input class=" floatright white" type="submit" value="Subscribe">
+							<input class=" floatright white btn-hover" type="submit" value="Subscribe">
 							</div>
 					</div>
 
 				</section>
 			</main>
 
-			<footer class="clearfix white"> 
-				<div class="info floatleft">
+			<footer class=" white"> 
+				<div class="info ">
 					<p>&copy;Aloha Apparel Co.</p>
 					<p>Powered by HTML and CSS.</p>
 					<p class="padding-bottom-med">604-604-6040 <a href=""> <span class="underline">info@alohaapparel.com <span> </a> </p>
 					<p><span class="adress grey">1490 W Broadway</span></p>
 					<p><span class="adress grey">Vancover, BC, Canada</span></p>
 				</div>
-				<div class="social white floatright clearfix">
+				<div class="social white clearfix">
 					<ul>
 						<li> <a href=""> <i class="fa fa-facebook"></i>  <span class="hide-for-mobile">Facebook </span> </a> </li>
 						<li> <a href=""> <i class="fa fa-twitter"></i>  <span class="hide-for-mobile">Twitter </span> </a> </li>
@@ -99,7 +162,21 @@
 						<li> <a href=""> <i class="fa fa-google-plus"></i>  <span class="hide-for-mobile">Google&plus; </span> </a> </li>
 					</ul>
 				</div>
+				<script src="owlcarousel/owl.carousel.min.js"></script>
+				<script>$(document).ready(function(){
+						$('.owl-carousel').owlCarousel({
+						rtl:true,
+						loop:true,
+						margin:10,
+						responsive:{
+						    0:{items:1},
+						    600:{items:2},
+						    1050:{items:4}
+						}
+						})
+						});  
+				</script>
 			 </footer>
-		
+			
     </body>
 </html>

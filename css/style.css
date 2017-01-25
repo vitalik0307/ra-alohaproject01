@@ -34,7 +34,7 @@ a:hover{
 	color:#d2d7dd;
 }
 .btn-hover:hover{
-	box-shadow: 3px 2px 3px rgba(0,0,0,0.5);
+	box-shadow: 3px 3px 3px rgba(0,0,0,0.5);
 }
 
 .text-center{
@@ -132,6 +132,9 @@ a:hover{
 }
 .nav a{
 	color:#e05555; 
+}
+.nav a:hover{
+	color:#c11d1d; 
 }
 
 .nav-item{
@@ -232,6 +235,7 @@ a:hover{
 
 .product-item h2{ 	
 line-height: 4rem;
+font-size: 1.7rem;
 color:#e05555;
 
 }
@@ -239,11 +243,6 @@ color:#e05555;
 	font-size: 0.8rem;
 }
 .add{
-	border:none;
-	background: transparent;
-}
-
-input[type="button"]{
 	width: 12vh;
 	background:black;
 	color: white;
@@ -468,7 +467,7 @@ footer{
 	width:50%;
 	height: 27vh;
 }
-input[type="button"]{
+.add{
 	width: 15vh;
 }
 .form{

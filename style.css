@@ -34,7 +34,7 @@ a:hover{
 	color:#d2d7dd;
 }
 .btn-hover:hover{
-	box-shadow: 3px 3px 3px rgba(0,0,0,0.5);
+	box-shadow: 3px 2px 3px rgba(0,0,0,0.5);
 }
 
 .text-center{

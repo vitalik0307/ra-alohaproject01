@@ -5,6 +5,7 @@
 *body{
 	margin: 0;
 }
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i|Raleway:300,300i,400,500i');
 
 /* font rules */
 h1,h2,h3,h4, {
@@ -149,9 +150,9 @@ a:hover{
 	justify-content:center;
 	width: 100%;
 	min-height: 67vh;
-	background:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),
-	 url(images/banner-girl.png) center bottom no-repeat,
-	 url(images/flower-bkgd.jpg)center no-repeat;
+	background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),
+	 url(../images/banner-girl.png) center bottom no-repeat,
+	 url(../images/flower-bkgd.jpg)center no-repeat;
 	background-size:contain,auto 80%, cover;
 	flex-wrap: wrap;
 	align-items:center;
@@ -201,28 +202,28 @@ a:hover{
 
 .mens{
 	background:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),
-	url(images/mens-category.jpg) center/cover no-repeat;
+	url(../images/mens-category.jpg) center/cover no-repeat;
 }
 .trends{
 	background:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),
-	url(images/trends-category.jpg)center/cover  no-repeat ;
+	url(../images/trends-category.jpg)center/cover  no-repeat ;
 
 }
 .glasses{
 	background:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),
-	url(images/glasses-category.jpg)center/cover  no-repeat;
+	url(../images/glasses-category.jpg)center/cover  no-repeat;
 }
 .sale{
 	background:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),
-	url(images/sale-category.jpg)center/cover  no-repeat;
+	url(../images/sale-category.jpg)center/cover  no-repeat;
 }
 .bags{
 	background:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),
-	url(images/bags-category.jpg)center/cover  no-repeat;
+	url(../images/bags-category.jpg)center/cover  no-repeat;
 }
 .womens{
 	background:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),
-	url(images/womens-category.jpg)center/cover  no-repeat;
+	url(../images/womens-category.jpg)center/cover  no-repeat;
 }
 	
 .products{
@@ -253,7 +254,7 @@ color:#e05555;
 }
 
 .subscribe{
-	background-image: url("images/wave-bkgd.jpg");
+	background-image: url("../images/wave-bkgd.jpg");
 	background-repeat: no-repeat;
 	background-position:bottom;
 	padding-bottom: 14vh;
